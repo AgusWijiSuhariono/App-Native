@@ -3,7 +3,7 @@ $url = $_GET['url'];
 $postData = array('longUrl' => $url);
 $jsonData = json_encode($postData);
 
-$curlObj = curl_init('https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyBOqZo49CZIlgwNHLX5yYZMPNL0InJ9KvY');
+$curlObj = curl_init('https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyAl1mg7mc_Ecj6O7RQqB-mbRRQgpBZ0Noo');
 
 curl_setopt($curlObj, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($curlObj, CURLOPT_SSL_VERIFYPEER, 0);
