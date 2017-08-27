@@ -15,7 +15,7 @@
     <script src="assets/js/jquery-3.1.1.min"></script>
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -40,6 +40,7 @@
             <li><a href="<?= "/BlogNative/index.php?v=tes-curl" ?>">Curl</a></li>
             <li><a href="<?= "/BlogNative/index.php?v=datepicker" ?>">DatePicker</a></li>
             <li><a href="<?= "/BlogNative/index.php?v=select2" ?>">Select 2</a></li>
+            <li><a href="<?= "/BlogNative/index.php?v=highchart" ?>">Highchart</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -77,5 +78,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugin/datepicker/js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="assets/plugin/select2/js/select2.min.js"></script>
+    <script type="text/javascript" src="assets/plugin/highchart/highcharts.js"></script>
+    <script type="text/javascript" src="assets/plugin/highchart/highcharts-3d.js"></script>
   </body>
 </html>
