@@ -12,6 +12,7 @@
     <link href="assets/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/plugin/datepicker/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugin/select2/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/DataTables/media/css/jquery.dataTables.css">
     <script src="assets/js/jquery-3.1.1.min"></script>
   </head>
   <body>
@@ -41,6 +42,7 @@
             <li><a href="<?= "/BlogNative/index.php?v=datepicker" ?>">DatePicker</a></li>
             <li><a href="<?= "/BlogNative/index.php?v=select2" ?>">Select 2</a></li>
             <li><a href="<?= "/BlogNative/index.php?v=highchart" ?>">Highchart</a></li>
+            <li><a href="<?= "/BlogNative/index.php?v=datatables" ?>">Data Table</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -80,5 +82,6 @@
     <script type="text/javascript" src="assets/plugin/select2/js/select2.min.js"></script>
     <script type="text/javascript" src="assets/plugin/highchart/highcharts.js"></script>
     <script type="text/javascript" src="assets/plugin/highchart/highcharts-3d.js"></script>
+    <script type="text/javascript" src='assets/plugin/DataTables/media/js/jquery.dataTables.js'></script>
   </body>
 </html>
