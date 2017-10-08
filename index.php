@@ -43,6 +43,7 @@
             <li><a href="<?= "/BlogNative/index.php?v=select2" ?>">Select 2</a></li>
             <li><a href="<?= "/BlogNative/index.php?v=highchart" ?>">Highchart</a></li>
             <li><a href="<?= "/BlogNative/index.php?v=datatables" ?>">Data Table</a></li>
+            <li><a href="<?= "/BlogNative/index.php?v=criptografi" ?>">Criptografi</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
