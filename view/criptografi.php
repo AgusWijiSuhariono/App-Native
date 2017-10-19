@@ -55,23 +55,37 @@
 <br><br>
 <div class="row">
 	<div class="col-lg-12">
+		<?php		
+		function encrypt($string, $key) {
+		    $iv_size = mcrypt_get_iv_size(MCRYPT_BLOWFISH, MCRYPT_MODE_ECB);
+		    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+		    $encrypted_string = mcrypt_encrypt(MCRYPT_BLOWFISH, $key, utf8_encode($string), MCRYPT_MODE_ECB, $iv);
+		    return $encrypted_string;
+		}
+
+		function decrypt($encrypted_string, $key) {
+		    $iv_size = mcrypt_get_iv_size(MCRYPT_BLOWFISH, MCRYPT_MODE_ECB);
+		    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+		    $decrypted_string = mcrypt_decrypt(MCRYPT_BLOWFISH, $key, $encrypted_string, MCRYPT_MODE_ECB, $iv);
+		    return $decrypted_string;
+		}
+		?>
 		<h3>Enkripsi</h3>
 		<p>	
-			Cript : mari belajar pemrograman ->
+			Encrypt :  <br>
+			String Yang di enkripsi : 'mari belajar pemrograman'<br> 
+			menjadi : 
 			<?php
-			echo crypt('mari belajar pemrograman');
+			$encrypted_string =  encrypt("mari belajar pemrograman", "blablabla");
+			echo $encrypted_string;
 			?>
 		</p>
 		<p>
-			Decrypt :
-			<br>
+			Decrypt : <br>
+			String Yang akan di decrypt : <?= $encrypted_string ?><br>
+			menjadi : 
 			<?php
-			$paswordcrypted = crypt('mari belajar pemrograman');
-			if (hash_equals($paswordcrypted, crypt('mari belajar pemrograman', $paswordcrypted))) {
-		   		echo "Data Enkripsi Sesuai";
-			}else{
-				echo "Data Tidak sesuai";
-			}
+			echo  decrypt($encrypted_string, "blablabla");
 			?>
 		</p>
 	</div>
