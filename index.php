@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="assets/plugin/datepicker/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugin/select2/css/select2.min.css">
     <link rel="stylesheet" type="text/css" href="assets/plugin/DataTables/media/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/fullcalendar/fullcalendar.min.css">
     <script src="assets/js/jquery-3.1.1.min"></script>
   </head>
   <body>
@@ -32,19 +33,25 @@
             <li class="<?= empty($_GET['v'])?"active":""  ?>">
               <a href="/BlogNative/index.php">Home</a>
             </li>
-            <li class="<?= $_GET['v']=='shortener'?'active':'' ?>">
-              <a href="<?= "/BlogNative/index.php?v=shortener" ?>">Shortener</a>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Demo Aplikasi <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="<?= $_GET['v']=='shortener'?'active':'' ?>">
+                  <a href="<?= "/BlogNative/index.php?v=shortener" ?>">Shortener</a>
+                </li>
+                <li class="<?= $_GET['v']=='googlemaps'?'active':'' ?>">
+                  <a href="<?= "/BlogNative/index.php?v=googlemaps" ?>">Google Maps</a>
+                </li>
+                <li class="<?= $_GET['v']=='tes-curl'?'active':'' ?>"><a href="<?= "/BlogNative/index.php?v=tes-curl" ?>">Curl</a></li>
+                <li class="<?= $_GET['v']=='datepicker'?'active':'' ?>"><a href="<?= "/BlogNative/index.php?v=datepicker" ?>">DatePicker</a></li>
+                <li class="<?= $_GET['v']=='select2'?'active':'' ?>"><a href="<?= "/BlogNative/index.php?v=select2" ?>">Select 2</a></li>
+                <li class="<?= $_GET['v']=='highchart'?'active':'' ?>"><a href="<?= "/BlogNative/index.php?v=highchart" ?>">Highchart</a></li>
+                <li class="<?= $_GET['v']=='datatables'?'active':'' ?>"><a href="<?= "/BlogNative/index.php?v=datatables" ?>">Data Table</a></li>
+                <li class="<?= $_GET['v']=='criptografi'?'active':'' ?>"><a href="<?= "/BlogNative/index.php?v=criptografi" ?>">Criptografi</a></li>
+                <li class="<?= $_GET['v']=='fungsi'?'active':'' ?>"><a href="<?= "/BlogNative/index.php?v=fungsi" ?>">Fungsi</a></li>
+                <li class="<?= $_GET['v']=='fullcalendar'?'active':'' ?>"><a href="<?= "/BlogNative/index.php?v=fullcalendar" ?>">Full Calendar</a></li>
+              </ul>
             </li>
-            <li class="<?= $_GET['v']=='googlemaps'?'active':'' ?>">
-              <a href="<?= "/BlogNative/index.php?v=googlemaps" ?>">Google Maps</a>
-            </li>
-            <li><a href="<?= "/BlogNative/index.php?v=tes-curl" ?>">Curl</a></li>
-            <li><a href="<?= "/BlogNative/index.php?v=datepicker" ?>">DatePicker</a></li>
-            <li><a href="<?= "/BlogNative/index.php?v=select2" ?>">Select 2</a></li>
-            <li><a href="<?= "/BlogNative/index.php?v=highchart" ?>">Highchart</a></li>
-            <li><a href="<?= "/BlogNative/index.php?v=datatables" ?>">Data Table</a></li>
-            <li><a href="<?= "/BlogNative/index.php?v=criptografi" ?>">Criptografi</a></li>
-            <li><a href="<?= "/BlogNative/index.php?v=fungsi" ?>">Fungsi</a></li>
           </ul>
         </div>
       </div>
@@ -73,5 +80,7 @@
     <script type="text/javascript" src="assets/plugin/highchart/highcharts.js"></script>
     <script type="text/javascript" src="assets/plugin/highchart/highcharts-3d.js"></script>
     <script type="text/javascript" src='assets/plugin/DataTables/media/js/jquery.dataTables.js'></script>
+    <script type="text/javascript" src='assets/plugin/fullcalendar/lib/moment.min.js'></script>
+    <script type="text/javascript" src='assets/plugin/fullcalendar/fullcalendar.min.js'></script>
   </body>
 </html>

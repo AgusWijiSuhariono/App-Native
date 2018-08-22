@@ -8,7 +8,12 @@
 	            "targets": -1,
 	            "data": null,
 	            "defaultContent": "<button class='btn btn-success btn-xs tblEdit'>Edit / Delete</button>"
-	        }]
+	        }],
+	        "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+		       var index = iDisplayIndex +1;
+		       $('td:eq(0)',nRow).html(index);
+		       return nRow;
+		    }
 	    });
 
 	    $('#tabelAuthor tbody').on( 'click', '.tblEdit', function () {
@@ -24,6 +29,7 @@
 		<table id="tabelAuthor" class="table table-bordered table-hover">
 			<thead>
 				<tr>
+					<th></th>
 					<th>Nama Awal</th>
 					<th>Nama Akhir</th>
 					<th>Email</th>
@@ -33,6 +39,7 @@
 			</thead>
 			<tbody>
 				<tr>
+					<td></td>
 					<td>Nama Awal</td>
 					<td>Nama Akhir</td>
 					<td>Email</td>
